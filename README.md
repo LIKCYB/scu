@@ -57,7 +57,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
 #### 6.附属包 ####
-附属包为额外的工具，并不属于GUI范畴，可以帮助你制作更好的软件
+附属包为额外的工具，并不属于GUI范畴，可以帮助你制作更好的软件  
 附属包大部分有dll文件，其源代码可在对应包目录的DllFileSrc文件夹找到
 
 #### 7.帮助 ####
