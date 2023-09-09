@@ -30,7 +30,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用SApp.Execute进行消息处理并保持运行(调用SApp.Exit()会终止SApp.Execute()的运行)
 //SMainWindow定义在scuui/SMainWindow.h
 ```  
-示例2，创建一个带有退出按钮的窗口  
+示例2，创建一个带有退出按钮的窗口(需要使用scu 1.5.0及以上的版本)  
 ```c++
 #include"scu.h"
 void ExitApp(){
