@@ -56,7 +56,11 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 添加了SPushButton类
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
-#### 6.帮助 ####
+#### 6.附属包 ####
+附属包为额外的工具，并不属于GUI范畴，可以帮助你制作更好的软件
+附属包大部分有dll文件，其源代码可在对应包目录的DllFileSrc文件夹找到
+
+#### 7.帮助 ####
 > SetEvents函数  
  >> SetEvents定义在大多数控件类里
  >> 函数原型是`void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`
