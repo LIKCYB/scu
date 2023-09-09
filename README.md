@@ -63,7 +63,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 #### 7.帮助 ####
 > SetEvents函数  
  >> SetEvents定义在大多数控件类里
- >> 函数原型是`void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`
+ >> 函数原型是 `void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`  
  >> 第一个参数需要传入事件ID号，相应的ID号在scuevent/se.h定义，第二个参数需要传入一个返回值为void的无参数函数指针，在事件触发时会调用此函数
 
 > AddControl函数
