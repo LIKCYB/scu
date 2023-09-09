@@ -59,6 +59,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 > 1.6.0 发布于2023-9-9-22:50
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性  
  >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为scuui::SPushButton类添加了Caption()函数修改和获取按钮上的文字
+ >> 为scuui::SMainWindow类和scuui::SPushButton添加了Reset()函数设置长、宽、X坐标、Y坐标
   
   
 *此库一般在周末更新1~8次  
