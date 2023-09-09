@@ -30,7 +30,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用SApp.Execute进行消息处理并保持运行(调用SApp.Exit()会终止SApp.Execute()的运行)
 //SMainWindow定义在scuui/SMainWindow.h
 ```  
-示例2，带有退出按钮创建一个窗口  
+示例2，创建一个带有退出按钮的窗口  
 ```c++
 #include"scu.h"
 void ExitApp(){
@@ -57,7 +57,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
 #### 6.帮助 ####
-> SetEvents函数  
+ SetEvents函数  
  >> SetEvents定义在大多数控件类里
  >> 函数原型是`void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`
  >> 第一个参数需要传入事件ID号，相应的ID号在scuevent/se.h定义，第二个参数需要传入一个返回值为void的无参数函数指针，在事件触发时会调用此函数
