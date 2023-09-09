@@ -66,3 +66,6 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 > this_event_is_not_supported异常
  >> 在使用SetEvents()时可能抛出
  >> 具体原因：设置了不支持的事件
+
+
+不会写README.md....
