@@ -53,12 +53,15 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> scu的第一个版本
 
 > 1.5.0 发布于2023-9-9-11:25
- >> 添加了SPushButton类
+ >> 添加了SPushButton类  
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
 > 1.6.0 发布于2023-9-9-22:50
- >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性
+ >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性  
  >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为scuui::SPushButton类添加了Caption()函数修改和获取按钮上的文字
+  
+  
+*此库一般在周末更新1~8次  
 
 #### 6.附属包 ####
 附属包为额外的工具，并不属于GUI范畴，可以帮助你制作更好的软件  
