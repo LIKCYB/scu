@@ -29,3 +29,40 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用SMainWindow.Show显示此窗口
 //调用SApp.Execute进行消息处理并保持运行(调用SApp.Exit()会终止SApp.Execute()的运行)
 //SMainWindow定义在scuui/SMainWindow.h
+```  
+示例2，带有退出按钮创建一个窗口  
+```c++
+#include"scu.h"
+void ExitApp(){
+  scuui::SApp.Exit();
+}
+int scuui::ScuMain(HINSTANCE AppInstanceHandle){
+  scuui::SMainWindow.Reset("Hello",100,100,300,300);
+  scuui::SPushButton ExitButton("退出程序",0,0,100,40);
+  ExitButton.SetEvents(scuui::Event_Click,ExitApp);
+  scuui::SMainWindow.AddControl(ExitButton);
+  scuui::SMainWindow.Show();
+  scuui::SApp.Execute();
+  return 0;
+}
+//调用SetEvents将ExitButton的Event_Click(单击)事件响应函数设置为ExitApp()
+//调用AddControl将ExitButton添加到主窗口上
+```  
+#### 5.更新日志 ####
+*1.0.0 发布于2023-9-9-8:30
+ *scu的第一个版本
+
+*1.5.0 发布于2023-9-9-11:25
+ *添加了SPushButton类
+ *添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
+
+#### 6.帮助 ####
+*SetEvents函数
+ *SetEvents定义在大多数控件类里  
+  函数原型是`void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`  
+  第一个参数需要传入事件ID号，相应的ID号在scuevent/se.h定义，第二个参数需要传入一个返回值为void的无参数函数指针，在事件触发时会调用此函数  
+*AddControl函数
+ *AddControl函数定义在窗口类中，使用AddControl可以将一个控件添加到窗口里，将此控件对象传入函数即可
+*this_event_is_not_supported异常
+ *在使用SetEvents()时可能抛出
+ *具体原因：设置了不支持的事件
