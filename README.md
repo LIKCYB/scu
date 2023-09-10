@@ -42,7 +42,7 @@ void ExitApp(){
 int scuui::ScuMain(HINSTANCE AppInstanceHandle){
   scuui::SMainWindow.Reset("Hello",100,100,300,300);
   scuui::SPushButton ExitButton("退出程序",0,0,100,40);
-  ExitButton.SetEvents(scuui::Event_Click,ExitApp);
+  ExitButton.SetEvents(scuui::SEvent_Click,ExitApp);
   scuui::SMainWindow.AddControl(ExitButton);
   scuui::SMainWindow.Show();
   scuui::SApp.Execute();
