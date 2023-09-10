@@ -1,6 +1,10 @@
 # scu
 SCU(Simple C++ UI)，是一个能让你使用win32 api创建UI时更简便的C++工具库
 
+### [!]使用时的注意事项 ###
+1.不应该修改命名空间"scuui::scusystem"内的任何变量，这会导致程序出现严重异常
+2.不应该调用控件类的"PutOnMainWindow()"函数，此函数会将控件添加到主窗口，此函数由"SMainWindow::AddControl()"调用
+
 #### 1.源代码 ####
 源代码基于MIT协议发布  
 
