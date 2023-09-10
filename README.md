@@ -60,7 +60,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Reset()函数设置长、宽、X坐标、Y坐标
 
 > 2.0.5 发布于2023-9-10-10:40
- >> 为scuui::SMainWindow类和全部控件类添加了X()、Y()、Width()、Height()函数单独设置或获取X坐标，Y坐标，宽，高
+ >> 为scuui::SMainWindow类和全部控件类添加了X()、Y()、Width()、Height()函数单独设置或获取X坐标，Y坐标，宽，高  
  >> 添加STextEdit类(输入框)  
  >> 为全部控件类添加了SetEnable()函数设置是否禁用
   
