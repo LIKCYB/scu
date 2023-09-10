@@ -62,19 +62,3 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
   
   
 *此库一般在周末更新1~8次  
-
-#### 6.帮助 ####
-> SetEvents函数  
- >> SetEvents定义在大多数控件类里
- >> 函数原型是 `void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`  
- >> 第一个参数需要传入事件ID号，相应的ID号在scuevent/se.h定义，第二个参数需要传入一个返回值为void的无参数函数指针，在事件触发时会调用此函数
-
-> AddControl函数
- >> AddControl函数定义在窗口类中，使用AddControl可以将一个控件添加到窗口里，将此控件对象传入函数即可
-
-> this_event_is_not_supported异常  
- >> 在使用SetEvents()时可能抛出
- >> 具体原因：设置了不支持的事件
-  
-  
-不会写README.md....
