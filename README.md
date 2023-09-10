@@ -47,19 +47,19 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用AddControl将ExitButton添加到主窗口上
 ```  
 #### 4.更新日志 ####
-> 1.0.0 发布于2023-9-9-8:30
+> 1.0.0 · 2023-9-9-8:30
  >> scu的第一个版本
 
-> 1.5.0 发布于2023-9-9-11:25
+> 1.5.0 · 2023-9-9-11:25
  >> 添加了SPushButton类  
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
-> 1.6.0 发布于2023-9-9-22:50
+> 1.6.0 · 2023-9-9-22:50
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性  
  >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为scuui::SPushButton类添加了Caption()函数修改和获取按钮上的文字  
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Reset()函数设置长、宽、X坐标、Y坐标
 
-> 2.0.5 发布于2023-9-10-10:40
+> 2.0.5  · 2023-9-10-10:40
  >> 为scuui::SMainWindow类和全部控件类添加了X()、Y()、Width()、Height()函数单独设置或获取X坐标，Y坐标，宽，高  
  >> 添加STextEdit类(输入框)  
  >> 为全部控件类添加了SetEnable()函数设置是否禁用
