@@ -55,9 +55,9 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 添加了this_event_is_not_supported异常(设置不可以的行为时抛出)
 
 > 1.6.0 · 2023-9-9-22:50
- >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性  
- >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为scuui::SPushButton类添加了Caption()函数修改和获取按钮上的文字  
- >> 为scuui::SMainWindow类和scuui::SPushButton添加了Reset()函数设置长、宽、X坐标、Y坐标
+ >> 为scuui::SMainWindow类和所有控件类添加了Show()、Hide()、SetVisiable()函数设置可见性  
+ >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为大部分控件类类添加了Caption()函数修改和获取按钮上的文字  
+ >> 为scuui::SMainWindow类和所有控件类添加了Reset()函数设置长、宽、X坐标、Y坐标
 
 > 2.0.5  · 2023-9-10-10:40
  >> 为scuui::SMainWindow类和全部控件类添加了X()、Y()、Width()、Height()函数单独设置或获取X坐标，Y坐标，宽，高  
