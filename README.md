@@ -8,15 +8,10 @@ SCU(Simple C++ UI)，是一个能让你使用win32 api创建UI时更简便的C++
 #### 1.源代码 ####
 源代码基于MIT协议发布  
 
-#### 2.优点 ####
-无依赖，包含"scu.h"头文件即可使用(请确保scu没有缺失的头文件)  
-简易，不需要进行消息处理，可以直接使用SetEvents设置控件事件  
+#### 2.实现 ####
+这个库只是将win32 api的gui部分封装为类以实现简便创建gui
 
-#### 3.缺点 ####
-仅支持windows系统  
-UI风格较旧  
-
-#### 4.示例 ####
+#### 3.示例 ####
 示例1，在x坐标100和y坐标100处创建一个标题为Hello的300*300大小的窗口  
 ```c++
 #include "scu.h"
@@ -51,7 +46,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用SetEvents将ExitButton的Event_Click(单击)事件响应函数设置为ExitApp()
 //调用AddControl将ExitButton添加到主窗口上
 ```  
-#### 5.更新日志 ####
+#### 4.更新日志 ####
 > 1.0.0 发布于2023-9-9-8:30
  >> scu的第一个版本
 
@@ -63,6 +58,11 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Show()、Hide()、SetVisiable()函数设置可见性  
  >> 为scuui::SMainWindow类添加了Title()函数修改和获取窗口标题，为scuui::SPushButton类添加了Caption()函数修改和获取按钮上的文字  
  >> 为scuui::SMainWindow类和scuui::SPushButton添加了Reset()函数设置长、宽、X坐标、Y坐标
+
+> 2.0.5 发布于2023-9-10-10:40
+ >> 为scuui::SMainWindow类和全部控件类添加了X()、Y()、Width()、Height()函数单独设置或获取X坐标，Y坐标，宽，高
+ >> 添加STextEdit类(输入框)  
+ >> 为全部控件类添加了SetEnable()函数设置是否禁用
   
   
 *此库一般在周末更新1~8次  
