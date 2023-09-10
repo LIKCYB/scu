@@ -1,6 +1,5 @@
 # scu
-SCU(Simple C++ UI)是一个基于win32 api实现的C++ UI工具库  
-此库正在开发中，因此有一些功能可能不完整  
+SCU(Simple C++ UI)，是一个能让你使用win32 api创建UI时更简便的C++工具库
 
 #### 1.源代码 ####
 源代码基于MIT协议发布  
@@ -64,11 +63,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
   
 *此库一般在周末更新1~8次  
 
-#### 6.附属包 ####
-附属包为额外的工具，并不属于GUI范畴，可以帮助你制作更好的软件  
-附属包大部分有dll文件，其源代码可在对应包目录的DllFileSrc文件夹找到
-
-#### 7.帮助 ####
+#### 6.帮助 ####
 > SetEvents函数  
  >> SetEvents定义在大多数控件类里
  >> 函数原型是 `void SetEvents(scuui::SEvent EventId,void(* EventFunctionPtr)())`  
