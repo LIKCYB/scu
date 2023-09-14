@@ -5,13 +5,10 @@ SCU(Simple C++ UI)，是一个能让你使用win32 api创建UI时更简便的C++
 1.不应该修改命名空间"scuui::scusystem"内的任何变量，这会导致程序出现严重异常  
 2.不应该调用控件类的"PutOnMainWindow()"函数，此函数会将控件添加到主窗口，此函数由"SMainWindow::AddControl()"调用
 
-#### 1.源代码 ####
-源代码基于MIT协议发布  
-
-#### 2.实现 ####
+#### 1.实现 ####
 这个库只是将win32 api的gui部分封装为类以实现简便创建gui
 
-#### 3.示例 ####
+#### 2.示例 ####
 示例1，在x坐标100和y坐标100处创建一个标题为Hello的300*300大小的窗口  
 ```c++
 #include "scu.h"
@@ -46,7 +43,7 @@ int scuui::ScuMain(HINSTANCE AppInstanceHandle){
 //调用SetEvents将ExitButton的Event_Click(单击)事件响应函数设置为ExitApp()
 //调用AddControl将ExitButton添加到主窗口上
 ```  
-#### 4.更新日志 ####
+#### 3.更新日志 ####
 > 1.0.0 · 2023-9-9-8:30
  >> scu的第一个版本
 
